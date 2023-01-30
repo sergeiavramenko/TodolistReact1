@@ -4,20 +4,23 @@ import React from "react";
 //     alert (a + b);
 // }
 // sum(12, 8);
+type Bebby = {
+    ip: number
+}
 type TaskType = {
     id: number
     title: string
     isDone: boolean
 }
 type PropsTyp = {
-    title: string
+    tit: Array<Bebby>
     tasks: Array<TaskType>
 }
 
 export function Todolist(props: PropsTyp) {
     return (
       <div>
-        <h3>{props.title}</h3>
+        <h3>{props.tit[1].ip}</h3>
         <div>
           <input />
           <button>+</button>

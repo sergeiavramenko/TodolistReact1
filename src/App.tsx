@@ -4,6 +4,10 @@ import './App.css';
 import { Todolist } from './Todolist';
 
 function App() {
+  let titl1 = [
+    {ip:1222},
+    {ip:12}
+  ]
 
   let tasks1 = [
     {id: 1,    title: "CSS",  isDone: true},
@@ -17,8 +21,8 @@ function App() {
   ]
   return (
     <div className='App'>
-      <Todolist title="What to learn" tasks={tasks1} />
-      <Todolist title="Movies" tasks={tasks2} />
+      <Todolist tit={titl1} tasks={tasks1} />
+      <Todolist tit={titl1} tasks={tasks2} />
      
      
     
